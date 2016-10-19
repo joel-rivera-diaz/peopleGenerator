@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"module": "system",
+		"outDir": "js/code_js",
+		"rootDir": "js/code_ts",
+		"sourceMap": true
+	}
+}

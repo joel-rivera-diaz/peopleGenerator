@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>typescript play</title>
+
+<style>
+body{ background-color: black; }
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+div#global_container{
+	width: 800px;
+	height: 600px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border: 1px solid green;
+	background-color: black;
+}
+</style>
+</head>
+<body>
+
+<div id="global_container">
+
+</div>
+
+
+
+<script src="js/lib/underscore.js"></script>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/chance.js"></script>
+
+<script src="js/lib/system.js"></script>
+<script>
+System.defaultJSExtensions = true;
+// set our baseURL reference path
+SystemJS.config({
+	baseURL: './js/code_js/'
+});
+SystemJS.import('main.js');
+</script> 
+</body>
+</html>
