@@ -5,10 +5,24 @@ body{ background-color: black; }
 	padding: 0;	
 }
 div#global_container{
-	width: 100%;
-	min-height: 800px;
+	width: 800px;
+	min-height: 400px;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 40px;
 	border: 1px solid green;
 	background-color: black;
+}
+
+div#delete_me{
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	background-color: white;
+}
+
+/* bit */
+.bit{
+	width: 4px;
+	height: 4px;
+	float: left;
 }

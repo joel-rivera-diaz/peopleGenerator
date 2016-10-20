@@ -1,5 +1,5 @@
-let greet = "hello brother";
+import { Person } from './Person';
 
-console.log( 'no no no xxx' );
+let me = new Person();
 
-
+me.generateIdSquare();
