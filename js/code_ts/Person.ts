@@ -1,7 +1,7 @@
 /**
- * DomThing
+ * Person
  */
-class DomThing {
+class Person {
 	private el:any;
 	
 	constructor(  ) {
