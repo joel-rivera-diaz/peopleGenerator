@@ -3,6 +3,7 @@ js/code_js/*
 
 js/lib/*
 !js/lib/*.gitkeep
+!js/lib/type_definitions/
 
 js/lib/type_definitions/*
 !js/lib/type_definitions/*.gitkeep
