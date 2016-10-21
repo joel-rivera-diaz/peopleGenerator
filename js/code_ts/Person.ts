@@ -29,8 +29,9 @@ class Person {
 	//========================================================================
 	//                            Public Methods
 	//========================================================================
-	public getData():Object{
-		return {
+	public getAllData():allData{
+		let data:allData;
+		data = {
 			id:         this._id,
 			idSquare:   this._idSquare,
 			name:       this._name,
@@ -40,12 +41,13 @@ class Person {
 			deathDate:  this._deathDate,
 			occupation: this._occupation
 		}
+		return data;
 	}
 
 	//========================================================================
 	//                           Generator methods
 	//========================================================================
-	
+
 	//---------------------------------------------------------
 	private generateIdSquare():JQuery{
 		//create the idSquare
@@ -113,4 +115,19 @@ class Person {
 	}
 }
 
+//***************************** INTERFACES *********************************
+interface allData{
+	id:string,
+	idSquare:JQuery,
+	name:string,
+	sex:string,
+	sexuality:string,
+	age:number,
+	deathDate:SimpleDate,
+	occupation:string
+}
+
+
+
+//===================>EXPORTS
 export { Person };
