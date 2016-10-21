@@ -45,6 +45,8 @@ class Person {
 	//========================================================================
 	//                           Generator methods
 	//========================================================================
+	
+	//---------------------------------------------------------
 	private generateIdSquare():JQuery{
 		//create the idSquare
 		let squareToFill = $(`<div class="id_square" id="${this._id}"></div>`);
@@ -56,9 +58,13 @@ class Person {
 		})
 		return squareToFill;
 	}
+
+	//---------------------------------------------------------
 	private generateId(  ):string{
 		return `person_${globals.peopleCreated}`;
 	}
+
+	//---------------------------------------------------------
 	private generateSexuality():string{
 		let posibilityArray:string[] = [];
 		_(100).times( ()=> posibilityArray.push( 's' ) );
@@ -75,6 +81,8 @@ class Person {
 		return fullNameSexuality;
 
 	}
+
+	//---------------------------------------------------------
 	private generateDeathDate():SimpleDate{
 		let day   = _.random( 0, 28 );
 		let month = chance.month();
@@ -82,7 +90,9 @@ class Person {
 		let date = new SimpleDate( day, month, year );
 		return date;
 	}
-	generateOccupation():string{
+
+	//---------------------------------------------------------
+	private generateOccupation():string{
 		const industries:string[] = [
 			'arts', 
 			'health', 
