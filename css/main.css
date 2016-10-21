@@ -13,13 +13,15 @@ div#global_container{
 	background-color: black;
 }
 
-div#delete_me{
+
+
+/* Id Square */
+div#id_square{
 	width: 20px;
 	height: 20px;
 	overflow: hidden;
 	background-color: white;
 }
-
 /* bit */
 .bit{
 	width: 4px;

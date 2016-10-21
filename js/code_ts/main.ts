@@ -1,5 +1,4 @@
 import { Person } from './Person';
 
-let me = new Person();
+let me:Person = new Person();
 
-me.generateIdSquare();
