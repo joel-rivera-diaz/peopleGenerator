@@ -3,10 +3,12 @@ body{ background-color: black; }
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;	
+	font-family: Courier New, Courier, monospace;
+	font-size: 12px;
 }
 div#global_container{
-	width: 800px;
-	min-height: 400px;
+	width: 1000px;
+	min-height: 410px;
 	margin: 0 auto;
 	margin-top: 40px;
 	border: 1px solid green;
@@ -14,12 +16,34 @@ div#global_container{
 	color:white;
 }
 
+/* ======== Person List ======== */
+li.person {
+	list-style: none;
+	height: 15px;
+	margin-top: 5px;
+}
+li.person span{
+	display: block;
+	float: left;
+	margin-left: 10px;
+	height: 15px;
+}
+span.id         { width: 90px;  }
+span.name       { width: 140px; }
+span.age        { width: 25px;  }
+span.sex        { width: 55px;  }
+span.occupation { width: 120px; }
+span.sexuality  { width: 70px;  }
+span.deathDate  { width: 300px; }
 
 
 /* Id Square */
-div#id_square{
-	width: 20px;
-	height: 20px;
+div.id_square{
+	width: 100px;
+	height: 4px;
+	margin-top: 6px;
+	margin-left: 10px;
+	float: left;
 	overflow: hidden;
 	background-color: white;
 }
@@ -29,3 +53,4 @@ div#id_square{
 	height: 4px;
 	float: left;
 }
+
