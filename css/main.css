@@ -7,7 +7,7 @@ body{ background-color: black; }
 	font-size: 12px;
 }
 div#global_container{
-	width: 1000px;
+	width: 890px;
 	min-height: 410px;
 	margin: 0 auto;
 	margin-top: 40px;
@@ -29,12 +29,15 @@ li.person span{
 	height: 15px;
 }
 span.id         { width: 90px;  }
-span.name       { width: 140px; }
+span.name       { width: 150px; }
 span.age        { width: 25px;  }
 span.sex        { width: 55px;  }
 span.occupation { width: 120px; }
 span.sexuality  { width: 70px;  }
-span.deathDate  { width: 300px; }
+span.death_day  { width: 25px;  }
+span.death_month{ width: 100px; }
+span.death_year { width: 35px;  }
+
 
 
 /* Id Square */

@@ -21,7 +21,9 @@ function createAndPrintPerson():void{
 	<span class="sex">${personData.sex}</span>
 	<span class="occupation">${personData.occupation}</span>
 	<span class="sexuality">${personData.sexuality}</span>
-	<span class="deathDate">${personData.deathDate.dateString()}</span>
+	<span class="death_day">${personData.deathDate.getData().day}</span>
+	<span class="death_month">${personData.deathDate.getData().month}</span>
+	<span class="death_year">${personData.deathDate.getData().year}</span>
 	</li>
 	`;
 

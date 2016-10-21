@@ -12,17 +12,25 @@ class SimpleDate {
 		this._year = year;
 	}
 
-	getData():Object{
-		return {
+	getData():IDateData{
+		let data:IDateData;
+		data = {
 			day:   this._day,
 			month: this._month,
-			yeart: this._year
-		}
+			year: this._year
+		};
+		return data; 
 	}
 	dateString():string{
 		return `day: ${this._day}, month: ${this._month}, year: ${this._year} `;
 	}
 }
 
+//----------------------INTERFACES------------------------
+interface IDateData {
+	day:number,
+	month:string,
+	year:number
+}
 
 export { SimpleDate };
